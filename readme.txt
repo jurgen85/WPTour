@@ -11,7 +11,9 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Create a WordPress Tour with handy dandy pop ups
 
 == Description ==
+Lightweight WordPress-Tour plugin.
 Make it easy for people to understand your website/application and take them on a tour. Easily add pop ups that explain how your website works.
+In the WP-admin simply add posts to the Tour Custom Post Type and automatically the tour will start for every new visitor off your website/application.
 
 == Installation ==
 

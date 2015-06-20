@@ -54,16 +54,17 @@ class WPTour {
 		$url = $this->pluginUrl . '/wptour-styles.css';
 		
 		// register styles and scripts
-		wp_register_style('wptour-style', $url);
-		wp_register_style('bootstrap-tour-standalone-css', 'https://cdnjs.cloudflare.com/ajax/libs/bootstrap-tour/0.10.1/css/bootstrap-tour-standalone.min.css');
-		wp_register_script('jquery', 'https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js');
-		wp_register_script('bootstrap-tour-standalone-js', 'https://cdnjs.cloudflare.com/ajax/libs/bootstrap-tour/0.10.1/js/bootstrap-tour-standalone.min.js');
+		wp_register_style('wptour-style', $this->pluginUrl . '/css/wptour-styles.css');
+		wp_register_style('bootstrap-tour-standalone-css', $this->pluginUrl . '/css/bootstrap-tour-standalone.min.css');
+		wp_register_script('bootstrap-tour-standalone-js', $this->pluginUrl . '/js/bootstrap-tour-standalone.min.js');
+		
+		
 		
 		// enqueue styles and scripts
 		wp_enqueue_style('wptour-style');
 		wp_enqueue_style('bootstrap-tour-standalone-css');
 		wp_enqueue_script('jquery');
-		wp_enqueue_script('bootstrap-tour-standalone-js');
+		wp_enqueue_script('bootstrap-tour-standalone-js',array( 'jquery' ));
 	}
 	
 	/**
